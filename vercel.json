@@ -11,5 +11,11 @@
       "dest": "/api/image.js",
       "methods": ["POST"]
     }
+  ],
+  "headers": [
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
   ]
 }
