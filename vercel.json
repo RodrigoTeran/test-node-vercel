@@ -5,7 +5,7 @@
       "dest": "/api/user.js",
       "methods": ["GET"],
       "headers": {
-        "Access-Control-Allow-Credentials": true,
+        "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*"
       }
     },
@@ -14,7 +14,7 @@
       "dest": "/api/image.js",
       "methods": ["POST"],
       "headers": {
-        "Access-Control-Allow-Credentials": true,
+        "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*"
       }
     }
