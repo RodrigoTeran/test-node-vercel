@@ -1,4 +1,16 @@
 {
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@now/node-server" }]
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/get-images",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/images",
+      "dest": "/server.js",
+      "methods": ["POST"]
+    }
+  ]
 }
