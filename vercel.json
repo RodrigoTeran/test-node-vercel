@@ -4,17 +4,16 @@
     {
       "src": "/",
       "dest": "/api/user.js",
-      "methods": ["GET"]
+      "methods": ["GET"],
+      "headers": [
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
     },
     {
       "src": "/post-image",
       "dest": "/api/image.js",
-      "methods": ["POST"]
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
+      "methods": ["POST"],
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
