@@ -2,13 +2,13 @@
   "version": 2,
   "routes": [
     {
-      "src": "/get-images",
-      "dest": "/server.js",
+      "src": "/",
+      "dest": "/api/user.js",
       "methods": ["GET"]
     },
     {
-      "src": "/images",
-      "dest": "/server.js",
+      "src": "/post-image",
+      "dest": "/api/image.js",
       "methods": ["POST"]
     }
   ]
